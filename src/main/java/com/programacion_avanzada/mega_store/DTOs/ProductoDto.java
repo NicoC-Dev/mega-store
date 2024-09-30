@@ -46,7 +46,7 @@ public class ProductoDto {
     private MarcaDto marca;
 
     @NotNull
-    private SubCategoriaDto subCategoriaDto;
+    private SubCategoriaDTO subCategoriaDto;
 
 
 }

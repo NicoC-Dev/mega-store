@@ -3,13 +3,13 @@ package com.programacion_avanzada.mega_store.Service;
 import java.util.List;
 
 
-import com.programacion_avanzada.mega_store.DTOs.SubCategoriaDto;
+import com.programacion_avanzada.mega_store.DTOs.SubCategoriaDTO;
 import com.programacion_avanzada.mega_store.Modelos.SubCategoria;
 
 public interface ISubCategoriaService {
-    SubCategoriaDto registrarSubCategoria(long categoriaId,SubCategoriaDto dto);
-    List<SubCategoriaDto> listar();
+    SubCategoriaDTO registrarSubCategoria(long categoriaId,SubCategoriaDTO dto);
+    List<SubCategoriaDTO> listar();
     SubCategoria buscarPorId(long id);
     void eliminar(long id);
-    SubCategoriaDto actualizar(long id, SubCategoriaDto dto);
+    SubCategoriaDTO actualizar(long id, SubCategoriaDTO dto);
 }

@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.programacion_avanzada.mega_store.DTOs.SubCategoriaDto;
+import com.programacion_avanzada.mega_store.DTOs.SubCategoriaDTO;
 import com.programacion_avanzada.mega_store.Mapper.SubCategoriaMapper;
 import com.programacion_avanzada.mega_store.Modelos.Categoria;
 import com.programacion_avanzada.mega_store.Modelos.SubCategoria;
@@ -35,7 +35,7 @@ public class SubCategoriaService implements ISubCategoriaService {
      * verificando que no haya 2 con el mismo nombre y normalizando los datos.
      */
     @Override
-    public SubCategoriaDto registrarSubCategoria(long categoriaId,SubCategoriaDto dto) {
+    public SubCategoriaDTO registrarSubCategoria(long categoriaId,SubCategoriaDTO dto) {
         
         SubCategoria subCategoria = subCategoriaMapper.toEntity(dto);
         
@@ -56,7 +56,7 @@ public class SubCategoriaService implements ISubCategoriaService {
     }
 
     @Override
-    public List<SubCategoriaDto> listar() {
+    public List<SubCategoriaDTO> listar() {
         List<SubCategoria> subCategorias = subCategoriaRepository.findAll();
         return subCategorias.stream().map(subCategoriaMapper::toDto).toList();
     }
@@ -74,7 +74,7 @@ public class SubCategoriaService implements ISubCategoriaService {
     }
 
     @Override
-    public SubCategoriaDto actualizar(long id, SubCategoriaDto dto) {
+    public SubCategoriaDTO actualizar(long id, SubCategoriaDTO dto) {
         SubCategoria subcategoria = subCategoriaRepository.findById(id).orElse(null);
         
         // Aquí actualizamos los campos de la subcategoría

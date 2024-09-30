@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class SubCategoriaDto {
+public class SubCategoriaDTO {
 
     @NotBlank
     @Size(min = 2)
