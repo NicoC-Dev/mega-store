@@ -77,7 +77,7 @@
 		<dependency><!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
-			<version>1.6.2</version>
+			<version>1.6.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct-processor -->
 		<dependency>
