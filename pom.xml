@@ -72,7 +72,7 @@
 		<dependency><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
-			<version>3.3.4</version>
+			<version>3.4.0</version>
 		</dependency>
 		<dependency><!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
 			<groupId>org.mapstruct</groupId>
